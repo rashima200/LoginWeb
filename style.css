@@ -98,7 +98,11 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transition: height .2s ease;
+    transform: scaleX(0);
+    transition:transform .5s ease, height .2s ease;
+}
+.wrapper.active-popup{
+    transform: scale(1);
 }
 .wrapper.active{
     height: 520px;
